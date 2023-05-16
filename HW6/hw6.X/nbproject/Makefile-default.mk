@@ -82,7 +82,7 @@ FIXDEPS=fixDeps
 _/_=/
 ShExtension=.sh
 Device=PIC32MX170F256B
-ProjectDir=/Users/lukecarlson/Documents/GitHub/ME433/hw6.X
+ProjectDir=/Users/lukecarlson/Documents/GitHub/ME433/HW6/hw6.X
 ProjectName=hw6
 ConfName=default
 ImagePath=dist/default/${IMAGE_TYPE}/hw6.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
@@ -121,38 +121,38 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1360895031/nu32dip.o: ../HW5/nu32dip.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/_ext/1360895031/nu32dip.o: ../HW5/nu32dip.c  .generated_files/flags/default/a1e6fa2c621890ad8d3811e0396fffb9f8d97000 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1360895031" 
 	@${RM} ${OBJECTDIR}/_ext/1360895031/nu32dip.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360895031/nu32dip.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/_ext/1360895031/nu32dip.o.d" -o ${OBJECTDIR}/_ext/1360895031/nu32dip.o ../HW5/nu32dip.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/homework6.o: homework6.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/homework6.o: homework6.c  .generated_files/flags/default/17866ce02cdd2bbfe1184ca8877a85f49b6b9cd8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/homework6.o.d 
 	@${RM} ${OBJECTDIR}/homework6.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/homework6.o.d" -o ${OBJECTDIR}/homework6.o homework6.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/i2c_master_noint.o: i2c_master_noint.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/i2c_master_noint.o: i2c_master_noint.c  .generated_files/flags/default/ed3af09a87fa303d85ac1871c0235b720b014e4e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/i2c_master_noint.o.d 
 	@${RM} ${OBJECTDIR}/i2c_master_noint.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/i2c_master_noint.o.d" -o ${OBJECTDIR}/i2c_master_noint.o i2c_master_noint.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 else
-${OBJECTDIR}/_ext/1360895031/nu32dip.o: ../HW5/nu32dip.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/_ext/1360895031/nu32dip.o: ../HW5/nu32dip.c  .generated_files/flags/default/60d9eb4621ea3d04a6387a12eb737a905faa622e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1360895031" 
 	@${RM} ${OBJECTDIR}/_ext/1360895031/nu32dip.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360895031/nu32dip.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/_ext/1360895031/nu32dip.o.d" -o ${OBJECTDIR}/_ext/1360895031/nu32dip.o ../HW5/nu32dip.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/homework6.o: homework6.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/homework6.o: homework6.c  .generated_files/flags/default/2b3d7c2d82093623f1cc06249bc76decf4bce95a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/homework6.o.d 
 	@${RM} ${OBJECTDIR}/homework6.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/homework6.o.d" -o ${OBJECTDIR}/homework6.o homework6.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/i2c_master_noint.o: i2c_master_noint.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/i2c_master_noint.o: i2c_master_noint.c  .generated_files/flags/default/2ce4e91b8dd1994ac0a2fd7e57f451e19d87b7bb .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/i2c_master_noint.o.d 
 	@${RM} ${OBJECTDIR}/i2c_master_noint.o 
