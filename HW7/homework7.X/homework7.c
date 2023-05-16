@@ -48,7 +48,9 @@ int main(void) {
         gz = conv_zG(array);
         temp = conv_temp(array);
         // print out the data
-        sprintf(m_out, "%f %f %f %f %f %f %f\r\n", ax, ay, az, gx, gy, gz, temp);
+        //sprintf(m_out, "%f %f %f %f %f %f %f\r\n", ax, ay, az, gx, gy, gz, temp);
+        //for plotting
+        sprintf(m_out, "%f\r\n", az);
         NU32DIP_WriteUART1(m_out);
         while (_CP0_GET_COUNT() < 48000000 / 2 / 100) {
         }
