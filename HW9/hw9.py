@@ -5,7 +5,7 @@ import numpy as np
 t = [] # column 0
 data1 = [] # column 1
 
-with open('sigD.csv') as f:
+with open('sigA.csv') as f:
     # open the csv file
     reader = csv.reader(f)
     for row in reader:
@@ -68,7 +68,7 @@ Y2 = Y2[range(int(n/2))]
 #FIR
 #sigA, cutoff freq of 10hz
 fir = []
-#paste h here from website:
+#paste h here from website: I ended up using the same for all signals
 h = [
     -0.000000000000000001,
     0.000127579613445419,
@@ -173,4 +173,5 @@ ax1.set_ylabel('Amplitude')
 ax2.loglog(frq,abs(Y),'b', frq3, abs(Y3), 'r') # plotting the fft
 ax2.set_xlabel('Freq (Hz)')
 ax2.set_ylabel('|Y(freq)|')
+ax2.set_title('Fl = 100hz, bl = 1200hz, #weights = 39, low-pass FIR')
 plt.show()
